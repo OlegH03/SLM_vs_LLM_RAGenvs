@@ -1,0 +1,27 @@
+# Standard RAG prompt (from RGB)
+system_prompt: |
+  You are a helpful assistant.
+  Answer the question based solely on the provided context.
+  If the context does not contain sufficient information,
+  state "I can not answer the question because of the insufficient information in documents."
+
+  Context:
+  {context}
+
+  Question: {question}
+  Answer:
+
+# Counterfactual Prompt (from RGB)
+system_prompt_fact: |
+  You are a helpful assistant.
+  Answer the question based solely on the provided context.
+  If the context does not contain sufficient information,
+  state "I can not answer the question because of the insufficient information in documents."
+  If you find factual errors in the provided documents,
+  state "There are factual errors in the provided documents."
+
+  Context:
+  {context}
+
+  Question: {question}
+  Answer:"""
